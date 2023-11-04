@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BravoLinks</title>
+    <!--Custom CSS link-->
+    <link rel="stylesheet" href="styling/styles.css">
+
+    <!-- FAVICON STUFF!!!!! :D -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+
+
+</head>
+<body>
+    <!--The links I am wanting to provide are as follows 
+        - LinkedIn (duh)
+        - Github (double duh)
+        - Twitter (i guess)
+        - Reddit
+        - Maybe add a downloadable resume button somewhere?? 
+    -->
+    <div class="navbar">
+      <div class="nav-logo">
+          <a href="/"class="nav-link logo">Bravo<span class="purp">Links</span>  |</a>
+      </div>
+      <div class="nav-about">
+          <a href="/about" class="nav-link about">About Me</a>
+      </div>
+  </div>
+    <div class="main_wrapper">
+        <div class="profile-box">
+            <img class="marcos-profile-pic shadow-hover" src="images/marcos.png" alt="a picture of marcos and his baby">
+            <div class="description">
+                <h1>Marcos Bravo</h1>
+                <p>Web Developer</p>
+            </div>
+        </div>
+        <hr>
+        <div class="links_box">
+            <h2><span class="purp"><b>CONNECT</b></span> With Me</h2>
+            <a href="/linkedin" target="_blank" class="shadow-hover main-link"><img src="images/icons/png/002-linkedin.png" alt="The LinkedIn logo"></a>
+            <a href="/github" target="_blank" class="shadow-hover main-link"><img src="images/icons/png/004-github.png" alt="The Github Logo"></a>
+            <a href="/twitter" target="_blank" class="shadow-hover main-link"><img src="images/icons/png/003-twitter.png" alt="The Twitter Logo"></a>
+            <a href="/reddit" target="_blank" class="shadow-hover main-link"><img src="images/icons/png/001-reddit.png" alt="The Reddit Logo"></a>
+            <a href="marcos-resume.pdf" download class="shadow-hover main-link"><img src="images/icons/png/005-cv.png" alt="Doc logo"></a>
+        </div>
+        <hr>
+        <div class="form_box">
+<!--A Work in progress...
+    this will be a contact me form that utilizes the
+    mailchimp api to collect user info...
+-->
+<form autocomplete="off" action="/" method="post">
+    <h2>Send Me Your <span class="purp">Email</span>!</h2>
+    <p>And I'll send ya one back ;)</p>
+    <div class="input_boxes_box">
+        <input name="fName" class="input_first form-float" type="text" placeholder="First Name" required>
+        <input name="lName" class="input_last form-float" type="text" placeholder="Last Name" required>
+        <input name="email" class="input_email form-float" type="email" placeholder="@ Email" required>
+    </div>
+        <button class="shadow-hover" type="submit">Submit</button>
+</form>
+        </div>
+        <div class="footer">
+            <p>created by: Marcos Bravo</p>
+            <p class="right-foot">Built with: HTML, CSS, & ExpressJS</p>
+        </div>
+    </div>
+  </body>
+</html>
